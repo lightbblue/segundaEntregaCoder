@@ -177,7 +177,7 @@ header ul>li>a {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(7, 1fr);
-	gap: 20px;
+	column-gap: 10%;
 }
 
 .about section:first-of-type h2 {
@@ -229,6 +229,8 @@ header ul>li>a {
 	gap: 2rem;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding: 0;
+	margin: 0;
 }
 
 .about section:last-child ul>li {
@@ -521,5 +523,16 @@ header ul>li>a {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+}
+
+@media screen and (max-width: 880px) {
+	.about section:first-of-type {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+		margin: 10rem 0;
 	}
 }
